@@ -1,0 +1,67 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+}
+
+.custom-control {
+
+    color: yellow;
+    margin-right: 20px;
+}
+
+p {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-left: 20px;
+}
+
+#TimeRemaining {
+    
+    text-align: center;
+    color: white;
+}
+
+#Question1 {
+    
+    color: white;
+    margin-left: 20px;
+}
+
+#Question2 {
+    
+    color: white;
+    margin-left: 20px;
+}
+
+#Question3 {
+    
+    color: white;
+    margin-left: 20px;
+}
+
+#Question4 {
+    
+    color: white;
+    margin-left: 20px;
+}
+
+#Question5 {
+    
+    color: white;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    color: yellow;
+    font-size: 75px;
+}
