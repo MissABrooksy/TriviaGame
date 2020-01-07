@@ -13,3 +13,15 @@ $(document).ready(function(){
         document.getElementById("TimeRemaining").innerHTML=count + " secs";
     }
     });
+
+$(document).on("click", "radioButton", function (err) {
+
+    $('input:radio').prop('checked', false);
+
+    if (!$(this).find('input:radio').prop('checked')) {
+
+        $(this).find('input:radio').prop('checked', true);
+    } else {
+        $(this).find('input:radio').prop('checked', false);
+    }
+});
