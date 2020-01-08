@@ -1,18 +1,34 @@
-setTimeout(thirtySeconds, 30000);
+  
+$("#start").on('click', function() {
+   
+    var time = 5;
 
-$(document).ready(function(){
-    var count=30;
-    var counter=setInterval(timer, 30000);
-    
-    function timer(){
-        count--;
-        if(count <= 0){
-            clearInterval(counter);
-            return;
+var quizTimer = setInterval(function(){
+  document.getElementById("timer").innerHTML = time + " seconds remaining";
+  time -= 1;
+  if(time <= 0){
+    clearInterval(quizTimer)
+      return;
         }
-        document.getElementById("TimeRemaining").innerHTML=count + " secs";
-    }
-    });
+}, 1000);
+  
+  });
+
+//setTimeout(thirtySeconds, 30000);
+
+//$(document).ready(function(){
+   // var count=30;
+  //  var counter=setInterval(timer, 30000);
+    
+   // function timer(){
+    //    count--;
+     //   if(count <= 0){
+     //       clearInterval(counter);
+      //      return;
+      //  }
+      //  document.getElementById("TimeRemaining").innerHTML=count + " secs";
+   // }
+   // });
 
 $(document).on("click", "radioButton", function (err) {
 
