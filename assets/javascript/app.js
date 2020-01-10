@@ -1,14 +1,18 @@
   
 $("#start").on('click', function() {
-   
+   console.log("start")
     var time = 5;
 
 var quizTimer = setInterval(function(){
-  document.getElementById("timer").innerHTML = time + " seconds remaining";
-  time -= 1;
-  if(time <= 0){
+  document.getElementById("time").innerHTML = time + " seconds remaining";
+  time --;
+  if(time <= -1){
     clearInterval(quizTimer)
+     alert("Time is UP");
+     document.getElementById("time").innerHTML = " no time remaining"
+
       return;
+
         }
 }, 1000);
   
