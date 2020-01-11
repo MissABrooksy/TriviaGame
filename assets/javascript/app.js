@@ -1,52 +1,55 @@
-  
 $("#start").on('click', function() {
-   console.log("start")
-    var time = 30;
+  $("#quiz").css('display', 'inline-block')
+  console.log("start")
+   var time = 5;
 
 var quizTimer = setInterval(function(){
-  document.getElementById("time").innerHTML = time + " seconds remaining";
-  time --;
-  if(time <= -1){
-    clearInterval(quizTimer)
-     
-     document.getElementById("time").innerHTML = " no time remaining"
+ document.getElementById("time").innerHTML = time + " seconds remaining";
+ time --;
+ if(time <= -1){
+
+   clearInterval(quizTimer)
+
+
+
+    document.getElementById("time").innerHTML = " no time remaining"
 check();
-      return;
+     return;
 
-        }
+       }
 }, 1000);
-  
-  });
+ 
+ });
 
-
-var answer1 = $("#a1").val(); //"Gotham City";
-var answer2 = $("#a2").val(); //"The Hulk";
-var answer3 = $("#a3").val(); //28;
-var answer4 = $("#a4").val(); //"Lois Lane";
-var answer5 = $("#a5").val(); //"Black and Yellow";
-var score= 0;
 
 function check() {
-  score=0;
+ let score=0;
+ const form = $("#quiz");
+ const answer1 = form.find("input[name=answerOne]:checked").val()
+ const answer2 = form.find("input[name=answerTwo]:checked").val()
+ const answer3 = form.find("input[name=answerThree]:checked").val()
+ const answer4 = form.find("input[name=answerFour]:checked").val()
+ const answer5 = form.find("input[name=answerFive]:checked").val()
+ 
+ console.log(answer1)
 
-  if(answer1 == "Gotham City") {
-    score++;
-  }
-  if(answer2 == "The Hulk") {
-    score++;
-  }
-  if(answer3 == 28) {
-    score++;
-  }
-  if(answer4 == "Lois Lane") {
-    score++;
-  }
-  if(answer5 == "Black and Yellow") {
-    score++;
-  }
+ if(answer1 === "Gotham City") {
+   score++;
+ }
+ if(answer2 === "The Hulk") {
+   score++;
+ }
+ if(answer3 === "28") {
+   score++;
+ }
+ if(answer4 === "Lois Lane") {
+   score++;
+ }
+ if(answer5 === "Black and Yellow") {
+   score++;
+ }
 
 document.getElementById("results").style.visibility = "visible";
 document.getElementById("correct").innerHTML = "You got " + score + "/5 correct!";
 
 };
-
