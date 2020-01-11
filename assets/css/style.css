@@ -69,3 +69,9 @@ footer {
     color: yellow;
     font-size: 75px;
 }
+
+#results {
+    visibility: hidden;
+    color: yellow;
+    font-size: 65px;
+}

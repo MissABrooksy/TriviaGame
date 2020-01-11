@@ -22,176 +22,205 @@
     <h1>Total Trivial Triva Game</h1>
 
     <br>
-    <p>Press the Start Button to begin the Trivia Round.  You will have 30 seconds to complete!</p>
+    <p>Press the Start Button to begin the Trivia Round. You will have 30 seconds to complete!</p>
 
-  <div id="timer">
-    <button id="start">Start</button>
-    <h1 id="time">30</h1>
-    
+    <div id="timer">
+        <button id="start">Start</button>
+        <h1 id="time">30</h1>
+
         <div>
-    <br>
+            <div id="results" name="results">
+                <p id="correct" name="correct"></p>
+            </div>
+            <br>
+            <div id="quiz" name="quiz">
+                <div id="Question1">Which fictional city is the home of Batman?
+                    <section id="Q1Answer1">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="q1" name="answerOne" class="custom-control-input"
+                                value="Emerald City">
+                            <label class="custom-control-label" for="customRadioInline1">Emerald City</label>
+                        </div>
+                    </section>
+                    <section id="Q1Answer2">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="answerOne" class="custom-control-input"
+                                value="Sunshine City">
+                            <label class="custom-control-label" for="customRadioInline2">Sunshine City</label>
+                        </div>
+                    </section>
+                    <section id="Q1Answer3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="a1" name="answerOne" class="custom-control-input"
+                                value="Gotham City">
+                            <label class="custom-control-label" for="customRadioInline3">Gotham City</label>
+                        </div>
+                    </section>
+                    <section id="Q1Answer4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline4" name="answerOne" class="custom-control-input"
+                                value="Elm City">
+                            <label class="custom-control-label" for="customRadioInline4">Elm City</label>
+                        </div>
+                    </section>
 
-    <div id="Question1">Which fictional city is the home of Batman?
-        <section id="Q1Answer1">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="answerOne" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Emerald City</label>
-            </div>
-        </section>
-        <section id="Q1Answer2">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="answerOne" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline2">Sunshine City</label>
-            </div>
-        </section>
-        <section id="Q1Answer3">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="answerOne" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Gotham City</label>
-            </div>
-        </section>
-        <section id="Q1Answer4">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="answerOne" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">Elm City</label>
-            </div>
-        </section>
+                </div>
 
-    </div>
+                <br>
+                <br>
 
-    <br>
-    <br>
+                <div id="Question2">Here are some facts about this famous superhero: Gamma radiation, very big, bad
+                    temper and his
+                    alias was Bruce Banner. What is the name of this superhero?
+                    <section id="Q2Answer1">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="answerTwo" class="custom-control-input"
+                                value="Superman">
+                            <label class="custom-control-label" for="customRadioInline1">Superman</label>
+                        </div>
+                    </section>
+                    <section id="Q2Answer2">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="answerTwo" class="custom-control-input"
+                                value="Batman">
+                            <label class="custom-control-label" for="customRadioInline2">Batman</label>
+                        </div>
+                    </section>
+                    <section id="Q2Answer3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline3" name="answerTwo" class="custom-control-input"
+                                value="Captain America">
+                            <label class="custom-control-label" for="customRadioInline3">Captain America</label>
+                        </div>
+                    </section>
+                    <section id="Q2Answer4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="a2" name="answerTwo" class="custom-control-input"
+                                value="The Hulk">
+                            <label class="custom-control-label" for="customRadioInline4">The Hulk</label>
+                        </div>
+                    </section>
 
-    <div id="Question2">Here are some facts about this famous superhero: Gamma radiation, very big, bad temper and his
-        alias was Bruce Banner. What is the name of this superhero?
-        <section id="Q2Answer1">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="answerTwo" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Superman</label>
-            </div>
-        </section>
-        <section id="Q2Answer2">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="answerTwo" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline2">Batman</label>
-            </div>
-        </section>
-        <section id="Q2Answer3">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="answerTwo" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Captain America</label>
-            </div>
-        </section>
-        <section id="Q2Answer4">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="answerTwo" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">The Hulk</label>
-            </div>
-        </section>
+                </div>
 
-    </div>
 
-        
-    <br>
-    <br>
+                <br>
+                <br>
 
-    <div id="Question3">How many superheros are in Avengers?
-        <section id="Q3Answer1">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="answerThree" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">10</label>
-            </div>
-        </section>
-        <section id="Q3Answer2"> 
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="answerThree" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline2">28</label>
-            </div>
-        </section>
-        <section id="Q3Answer3">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="answerThree" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">16</label>
-            </div>
-        </section>
-        <section id="Q3Answer4"> 
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="answerThree" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">7</label>
-            </div>
-        </section>
-        </div>
+                <div id="Question3">How many superheros are in Avengers?
+                    <section id="Q3Answer1">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="answerThree" class="custom-control-input"
+                                value="10">
+                            <label class="custom-control-label" for="customRadioInline1">10</label>
+                        </div>
+                    </section>
+                    <section id="Q3Answer2">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="a3" name="answerThree" class="custom-control-input"
+                                value="28">
+                            <label class="custom-control-label" for="customRadioInline2">28</label>
+                        </div>
+                    </section>
+                    <section id="Q3Answer3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline3" name="answerThree" class="custom-control-input"
+                                value="16">
+                            <label class="custom-control-label" for="customRadioInline3">16</label>
+                        </div>
+                    </section>
+                    <section id="Q3Answer4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline4" name="answerThree" class="custom-control-input"
+                                value="7">
+                            <label class="custom-control-label" for="customRadioInline4">7</label>
+                        </div>
+                    </section>
+                </div>
 
-        
-        
-    <br>
-    <br>
 
-    <div id="Question4">What is the name of Superman's love interest?
-        <section id="Q4Answer1">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="answerFour" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Lois Lane</label>
-            </div>
-        </section>
-        <section id="Q4Answer2">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="answerFour2" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline2">Catwoman</label>
-            </div>
-        </section>
-        <section id="Q4Answer3">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="answerFour" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Black Chyna</label>
-            </div>
-        </section>
-        <section id="Q4Answer4">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="answerFour" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">Mary Poppins</label>
-            </div>
-        </section>
-        </div>
 
-        
-        
-    <br>
-    <br>
+                <br>
+                <br>
 
-    <div id="Question5">What color is batman's cosutme?
-        <section id="Q5Answer1">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="answerFive" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline1">Orange and Green</label>
-            </div>
-        </section>
-        <section id="Q5Answer2">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="answerFive" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline2">Red, White and Blue</label>
-            </div>
-        </section>
-        <section id="Q5Answer3">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline3" name="answerFive" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline3">Black and Yellow</label>
-            </div>
-        </section>
-        <section id="Q5Answer4">
-            <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline4" name="answerFive" class="custom-control-input">
-                <label class="custom-control-label" for="customRadioInline4">Black and White</label>
-            </div>
-        </section>
-        </div>
+                <div id="Question4">What is the name of Superman's love interest?
+                    <section id="Q4Answer1">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="a4" name="answerFour" class="custom-control-input"
+                                value="Lois Lane">
+                            <label class="custom-control-label" for="customRadioInline1">Lois Lane</label>
+                        </div>
+                    </section>
+                    <section id="Q4Answer2">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="answerFour2" class="custom-control-input"
+                                value="Cat Woman">
+                            <label class="custom-control-label" for="customRadioInline2">Cat Woman</label>
+                        </div>
+                    </section>
+                    <section id="Q4Answer3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline3" name="answerFour" class="custom-control-input"
+                                value="Black Chyna">
+                            <label class="custom-control-label" for="customRadioInline3">Black Chyna</label>
+                        </div>
+                    </section>
+                    <section id="Q4Answer4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline4" name="answerFour" class="custom-control-input"
+                                value="Mary Poppins">
+                            <label class="custom-control-label" for="customRadioInline4">Mary Poppins</label>
+                        </div>
+                    </section>
+                </div>
 
-        <br>
-        <br>
-        <br>
 
-        <footer>You Rock!</footer>
-        <script src="assets/javascript/app.js"></script>
+
+                <br>
+                <br>
+
+                <div id="Question5">What color is batman's cosutme?
+                    <section id="Q5Answer1">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="answerFive" class="custom-control-input"
+                                value="Orange and Green">
+                            <label class="custom-control-label" for="customRadioInline1">Orange and Green</label>
+                        </div>
+                    </section>
+                    <section id="Q5Answer2">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="answerFive" class="custom-control-input"
+                                value="Red, White and Blue">
+                            <label class="custom-control-label" for="customRadioInline2">Red, White and Blue</label>
+                        </div>
+                    </section>
+                    <section id="Q5Answer3">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="a5" name="answerFive" class="custom-control-input"
+                                value="Black and Yellow">
+                            <label class="custom-control-label" for="customRadioInline3">Black and Yellow</label>
+                        </div>
+                    </section>
+                    <section id="Q5Answer4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline4" name="answerFive" class="custom-control-input"
+                                value="Black and White">
+                            <label class="custom-control-label" for="customRadioInline4">Black and White</label>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div id="results" name="results">
+                <p id="correct" name="correct"></p>
+            </div>
+
+            <br>
+
+            <footer>You Rock!</footer>
+            <script src="assets/javascript/app.js"></script>
 </body>
 
 

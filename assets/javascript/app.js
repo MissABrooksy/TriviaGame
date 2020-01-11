@@ -1,16 +1,16 @@
   
 $("#start").on('click', function() {
    console.log("start")
-    var time = 5;
+    var time = 30;
 
 var quizTimer = setInterval(function(){
   document.getElementById("time").innerHTML = time + " seconds remaining";
   time --;
   if(time <= -1){
     clearInterval(quizTimer)
-     alert("Time is UP");
+     
      document.getElementById("time").innerHTML = " no time remaining"
-
+check();
       return;
 
         }
@@ -18,30 +18,35 @@ var quizTimer = setInterval(function(){
   
   });
 
-//setTimeout(thirtySeconds, 30000);
 
-//$(document).ready(function(){
-   // var count=30;
-  //  var counter=setInterval(timer, 30000);
-    
-   // function timer(){
-    //    count--;
-     //   if(count <= 0){
-     //       clearInterval(counter);
-      //      return;
-      //  }
-      //  document.getElementById("TimeRemaining").innerHTML=count + " secs";
-   // }
-   // });
+var answer1 = $("#a1").val(); //"Gotham City";
+var answer2 = $("#a2").val(); //"The Hulk";
+var answer3 = $("#a3").val(); //28;
+var answer4 = $("#a4").val(); //"Lois Lane";
+var answer5 = $("#a5").val(); //"Black and Yellow";
+var score= 0;
 
-$(document).on("click", "radioButton", function (err) {
+function check() {
+  score=0;
 
-    $('input:radio').prop('checked', false);
+  if(answer1 == "Gotham City") {
+    score++;
+  }
+  if(answer2 == "The Hulk") {
+    score++;
+  }
+  if(answer3 == 28) {
+    score++;
+  }
+  if(answer4 == "Lois Lane") {
+    score++;
+  }
+  if(answer5 == "Black and Yellow") {
+    score++;
+  }
 
-    if (!$(this).find('input:radio').prop('checked')) {
+document.getElementById("results").style.visibility = "visible";
+document.getElementById("correct").innerHTML = "You got " + score + "/5 correct!";
 
-        $(this).find('input:radio').prop('checked', true);
-    } else {
-        $(this).find('input:radio').prop('checked', false);
-    }
-});
+};
+
