@@ -1,7 +1,7 @@
 $("#start").on('click', function() {
   $("#quiz").css('display', 'inline-block')
   console.log("start")
-   var time = 5;
+   var time = 30;
 
 var quizTimer = setInterval(function(){
  document.getElementById("time").innerHTML = time + " seconds remaining";
